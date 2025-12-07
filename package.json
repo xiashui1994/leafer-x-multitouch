@@ -1,0 +1,74 @@
+{
+  "name": "leafer-x-multitouch",
+  "version": "1.0.0",
+  "description": "Leafer UI 多点触控管理插件,支持多个元素的独立触摸交互,适用于游戏、交互应用等场景",
+  "author": "xiashui",
+  "license": "MIT",
+  "type": "module",
+  "main": "dist/index.esm.js",
+  "exports": {
+    ".": {
+      "types": "./types/index.d.ts",
+      "import": "./dist/index.esm.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "types": "types/index.d.ts",
+  "files": [
+    "src",
+    "types",
+    "dev",
+    "dist"
+  ],
+  "keywords": [
+    "leafer",
+    "leafer-ui",
+    "multitouch",
+    "multi-touch",
+    "touch",
+    "gesture",
+    "interaction",
+    "game",
+    "canvas",
+    "miniapp"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xiashui1994/leafer-x-multitouch.git"
+  },
+  "homepage": "https://github.com/xiashui1994/leafer-x-multitouch#readme",
+  "bugs": "https://github.com/xiashui1994/leafer-x-multitouch/issues",
+  "scripts": {
+    "start": "cross-env NODE_ENV=development rollup -c -w",
+    "example": "cross-env NODE_ENV=development rollup -c",
+    "build": "cross-env PLATFORM=all rollup -c",
+    "test": "vitest"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^29.0.0",
+    "@rollup/plugin-html": "^2.0.0",
+    "@rollup/plugin-multi-entry": "^7.1.0",
+    "@rollup/plugin-node-resolve": "^16.0.3",
+    "@rollup/plugin-terser": "^0.4.4",
+    "@rollup/plugin-typescript": "^12.3.0",
+    "@typescript-eslint/eslint-plugin": "^8.48.1",
+    "@typescript-eslint/parser": "^8.48.1",
+    "cross-env": "^10.1.0",
+    "eslint": "^9.39.1",
+    "jsdom": "^27.2.0",
+    "leafer-ui": "^1.11.2",
+    "rollup": "^4.53.3",
+    "rollup-plugin-copy": "^3.5.0",
+    "rollup-plugin-dts": "^6.3.0",
+    "rollup-plugin-livereload": "^2.0.5",
+    "rollup-plugin-serve": "^3.0.0",
+    "rollup-plugin-string": "^3.0.0",
+    "tslib": "^2.8.1",
+    "typescript": "^5.9.3",
+    "vite": "^7.2.6",
+    "vitest": "^4.0.15"
+  },
+  "dependencies": {
+    "@leafer-ui/interface": "^1.11.2"
+  }
+}
